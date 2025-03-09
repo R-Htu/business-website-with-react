@@ -3,7 +3,7 @@
 :root {
   --primary-color: #990033;
   --secondary-color: #ffc2b4;
-  --primary-nav-color: #e21056;
+  --primary-nav-color: #527b73;
   --primary-bg: rgb(153 0 51 / 14%);
   --font-color: #b7b7b7;
   --bg-color: #171717;
@@ -16,6 +16,56 @@
   --border-color-light: rgba(255, 255, 255, 0.2);  
   --box-shadow: 0 1rem 3rem rgb(0 0 0 / 12%);
   --dark-layer-color: linear-gradient(to top, rgb(21 21 21 / 67%), rgb(23 23 23 / 17%));
-
+  --primary-font:"Lora", sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  font-size: 14px;
+  font-family: var(--primary-font);
+}
+.app {
+  height: 100vh;
+  width: 100%;
+  background-color: #efefef;
+}
+/* scroll bar အထူ */
+::-webkit-scrollbar {
+  width: 1rem;
 }
 
+/* roll လို့ ရသေးတဲ့ နေရာ */
+::-webkit-scrollbar-track {
+  background-color: #64623c;
+}
+
+/* scrollbar ရဲ့ အရောင် */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #454343;
+}
+
+a, ul {
+  text-decoration: none;
+}
+a:hover {
+  color: #b76f6f;
+}
+h1 {
+  font-size: 3.875rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+p{
+  font-size: 1rem;
+  color: var(--font-color);
+  line-height: 1.625rem;
+}
